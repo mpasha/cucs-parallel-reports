@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package model;
+option java_package = "com.ntuc.income.up.model";
+
+message Register {
+    string identityTypeList = 1;
+    string identityType = 2;
+    string dateOfBirth = 3;
+    string emailAddress = 4;
+    string changeEmailAddress = 5;
+    string password = 6;
+    string confirmPassword = 7;
+}
+
+message Registers {
+    repeated Register registers = 1;
+}
+

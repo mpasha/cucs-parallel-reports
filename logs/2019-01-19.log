@@ -1,0 +1,22 @@
+08:34:56.781 [QA] INFO: ::TEST PACK STARTED:::::::::::::::::::::::::::::::::::::::::
+08:35:47.399 [QA] INFO: ::TEST PACK STARTED:::::::::::::::::::::::::::::::::::::::::
+08:39:05.136 [QA] INFO: ::TEST PACK STARTED:::::::::::::::::::::::::::::::::::::::::
+08:39:32.788 [QA] INFO: org.bitbucket.iamkenos.cissnei.masterthought.ValidationException: File 'target/cucumber-html-reports/index.json' is not proper Cucumber report!
+08:39:33.214 [QA] INFO: ::TEST PACK COMPLETE::::::::::::::::::::::::::::::::::::::::
+08:46:22.847 [QA] INFO: ::TEST PACK STARTED:::::::::::::::::::::::::::::::::::::::::
+08:46:50.621 [QA] INFO: org.bitbucket.iamkenos.cissnei.masterthought.ValidationException: java.io.FileNotFoundException: target\cucumber-html-reports\index.json (The system cannot find the file specified)
+08:46:51.011 [QA] INFO: ::TEST PACK COMPLETE::::::::::::::::::::::::::::::::::::::::
+08:53:13.129 [QA] INFO: ::TEST PACK STARTED:::::::::::::::::::::::::::::::::::::::::
+08:53:41.896 [QA] INFO: org.bitbucket.iamkenos.cissnei.masterthought.ValidationException: File 'target/cucumber-reports/cucumber.json' is not proper Cucumber report!
+08:53:42.160 [QA] INFO: ::TEST PACK COMPLETE::::::::::::::::::::::::::::::::::::::::
+08:57:42.781 [QA] INFO: ::TEST PACK STARTED:::::::::::::::::::::::::::::::::::::::::
+08:57:43.489 [QA] INFO: org.bitbucket.iamkenos.cissnei.masterthought.ValidationException: java.io.FileNotFoundException: target\cucumber-html-reports\cucumber.json (The system cannot find the file specified)
+08:57:45.805 [QA] INFO: ::TEST PACK COMPLETE::::::::::::::::::::::::::::::::::::::::
+09:27:08.553 [QA] INFO: ::TEST PACK STARTED:::::::::::::::::::::::::::::::::::::::::
+09:27:37.976 [QA] INFO: org.bitbucket.iamkenos.cissnei.masterthought.ValidationException: File 'target/cucumber-html-reports/index.json' is not proper Cucumber report!
+09:27:38.408 [QA] INFO: ::TEST PACK COMPLETE::::::::::::::::::::::::::::::::::::::::
+10:39:32.635 [QA] INFO: net.masterthought.cucumber.ValidationException: File 'target/cucumber-html-reports/index.json' is not proper Cucumber report!
+10:44:58.776 [QA] INFO: net.masterthought.cucumber.ValidationException: java.io.FileNotFoundException: target\cucumber.json (The system cannot find the file specified)
+10:48:29.028 [QA] INFO: net.masterthought.cucumber.ValidationException: java.io.FileNotFoundException: target\cucumber.json (The system cannot find the file specified)
+10:51:32.908 [QA] INFO: net.masterthought.cucumber.ValidationException: File 'target/cucumber-html-reports/cucumber.json' is not proper Cucumber report!
+11:09:50.443 [QA] INFO: net.masterthought.cucumber.ValidationException: File 'target/cucumber-html-reports/cucumber-json-report.json' is not proper Cucumber report!
