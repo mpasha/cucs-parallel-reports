@@ -2,6 +2,8 @@ package com.ntuc.income.up.runner;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+import net.masterthought.cucumber.Configuration;
+import net.masterthought.cucumber.ReportBuilder;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
@@ -18,8 +20,14 @@ tags = { "@PU-2" },
 dryRun = false,
 strict = true,
 monochrome = true,
-plugin = {
-//		"pretty",
+format = {"pretty", "html:target/cucumber", "json:target/cucumber.json"}
+)
+public class RunCukeTest {
+
+	@AfterClass
+	public static void teardown() {
+
+		//		"pretty",
 //		"html:target/cucumber_regression",
 //		"com.cucumber.listener.ExtentCucumberFormatter:output/report_regression.html",
 //		"html:target/cucumber-html-report_regression",
@@ -28,26 +36,21 @@ plugin = {
 //		"usage:target/cucumber-usage_regression.json",
 //		"junit:target/cucumber-results_regression.xml"
 //		"json:target/cucumber-html-reports/index.json"
-		"pretty","html:target/html", "json:target/jsonReports/cucumber-json-report.json"
-		})
-public class RunCukeTest {
 
-	@AfterClass
-	public static void teardown() {
+
 //		Reporter.loadXMLConfig(new File("src/test/java/extent-config.xml"));
 //		Reporter.setSystemInfo("user", System.getProperty("user.name"));
 //		Reporter.setSystemInfo("os", "Windows");
 //		Reporter.setTestRunnerOutput("Sample test runner
 //		output message");
 
-		/*Collection<File> jsonFiles = org.apache.commons.io.FileUtils.listFiles(new File("target/cucumber-html-reports/"), new String[]{"json"}, true);
+		Collection<File> jsonFiles = org.apache.commons.io.FileUtils.listFiles(new File("target/"), new String[]{"json"}, true);
 		List<String> jsonPaths = new ArrayList(jsonFiles.size());
 		jsonFiles.forEach(file -> jsonPaths.add(file.getAbsolutePath()));
-		Configuration config = new Configuration(new File("target/cucumber-html-reports/"), "up");
+		Configuration config = new Configuration(new File("target/"), "up");
 		ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
 		reportBuilder.generateReports();
 
-*/
 
 		/*File reportOutputDirectory = new File("target/cucumber-html-reports/");
 		List<String> jsonFiles = new ArrayList<>();
