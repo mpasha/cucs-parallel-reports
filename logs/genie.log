@@ -345,3 +345,150 @@
 13:09:47.390 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
 13:09:47.461 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
 13:09:47.510 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+13:56:25.426 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+13:56:27.823 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+13:56:27.890 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+14:20:05.265 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+14:20:06.928 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+14:20:06.987 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+15:24:51.384 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+15:24:52.690 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+15:24:52.761 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+00:31:29.871 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+00:31:31.121 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+00:31:31.150 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+01:53:41.467 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+01:53:42.674 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+01:53:42.703 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+02:00:05.802 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+02:00:06.470 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+02:00:06.824 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+02:00:06.850 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+02:00:07.499 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+02:00:07.520 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+02:02:41.853 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+02:02:42.511 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+02:02:42.840 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+02:02:42.869 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+02:02:43.614 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+02:02:43.648 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+02:03:17.546 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+02:03:18.144 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+02:03:18.148 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+02:07:18.168 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+02:07:18.633 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+02:07:19.516 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+02:07:19.554 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+02:07:19.750 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+02:07:19.774 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+02:39:20.083 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+02:39:20.083 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+02:39:20.083 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+02:39:20.083 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+02:39:21.231 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+02:39:21.262 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+02:39:21.248 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+02:39:21.279 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+02:39:21.310 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+02:39:21.317 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+02:39:21.318 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+02:39:21.321 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+02:42:31.726 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+02:42:31.726 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+02:42:31.726 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+02:42:31.726 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+02:42:32.828 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+02:42:32.869 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+02:42:32.871 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+02:42:32.883 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+02:42:32.899 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+02:42:32.906 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+02:42:32.908 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+02:42:32.915 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+02:47:58.199 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+02:47:58.199 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+02:47:58.199 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+02:47:58.199 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+02:47:59.293 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+02:47:59.293 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+02:47:59.319 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+02:47:59.326 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+02:47:59.351 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+02:47:59.356 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+02:47:59.358 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+02:47:59.361 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+02:53:03.526 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+02:53:03.526 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+02:53:04.866 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+02:53:04.876 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+02:53:04.899 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+02:53:04.901 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+02:53:31.835 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+02:53:31.929 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+02:53:32.500 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+02:53:32.503 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+02:53:32.529 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+02:53:32.534 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+02:58:21.024 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+02:58:22.105 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+02:58:22.135 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+03:01:36.717 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+03:01:36.717 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+03:01:41.255 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+03:01:41.273 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+03:01:41.305 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+03:01:41.311 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+12:45:40.006 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+12:45:40.007 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+12:45:41.393 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+12:45:41.434 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+12:45:41.460 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+12:45:41.463 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+13:17:35.908 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+13:17:35.921 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+13:17:36.931 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+13:17:36.934 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+13:17:36.954 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+13:17:36.954 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+13:41:06.874 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+13:41:06.874 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+13:41:08.007 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+13:41:08.016 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+13:41:08.039 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+13:41:08.039 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+14:05:15.957 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+14:05:15.986 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+14:05:17.464 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+14:05:17.533 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+14:05:17.605 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+14:05:17.645 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+14:13:45.386 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+14:13:45.395 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+14:13:47.084 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+14:13:47.184 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+14:13:47.492 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+14:13:47.636 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+14:33:33.662 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+14:33:34.730 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+14:33:34.765 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+14:40:05.283 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+14:40:06.605 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+14:40:06.642 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+14:43:16.953 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+14:43:17.859 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+14:43:17.886 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+15:05:57.895 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+15:05:58.700 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+15:05:58.721 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+15:16:18.696 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+15:16:19.507 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+15:16:19.529 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+15:28:06.434 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+15:28:07.180 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+15:28:07.200 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+15:30:25.581 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+15:30:25.582 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getDriversFromXml(BrowserManager.java:563)evel: Reading https://chromedriver.storage.googleapis.com/ to seek [chromedriver]sg
+15:30:26.522 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+15:30:26.558 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg
+15:30:26.593 [GENIE] io.github.bonigarcia.wdm.BrowserManager.getLatest(BrowserManager.java:498)evel: Latest version of [chromedriver] is 72.0.3626.7sg
+15:30:26.614 [GENIE] io.github.bonigarcia.wdm.BrowserManager.exportDriver(BrowserManager.java:626)evel: Exporting webdriver.chrome.driver as C:\Users\Mehraj Pasha\.m2\repository\webdriver\chromedriver\win32\72.0.3626.7\chromedriver.exesg

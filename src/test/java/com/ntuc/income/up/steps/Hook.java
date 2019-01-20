@@ -36,7 +36,7 @@ public class Hook extends BaseUtil {
         String appUrl = "http://localhost:3000/register/";
         String env = "LOCAL";
         String remoteUrl = "";
-        String browser = System.getProperty("Browser");
+        String browser = "Chrome";//System.getProperty("Browser");
 
         if (env.equalsIgnoreCase("LOCAL"))
             setUpLocal(browser, appUrl);

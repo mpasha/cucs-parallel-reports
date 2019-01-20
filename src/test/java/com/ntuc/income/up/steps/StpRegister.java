@@ -22,7 +22,7 @@ public class StpRegister {
 
     public StpRegister(BaseUtil base) {
         this.base = base;
-        registerPage = new RegisterPage(this.base.Driver);
+        this.registerPage = new RegisterPage(this.base.Driver);
         this.validate = new Validate();
     }
 

@@ -1,5 +1,6 @@
 package com.ntuc.income.up;
 
+import cucumber.api.java.After;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -35,4 +36,5 @@ public class AppTest
     {
         assertTrue( true );
     }
+
 }

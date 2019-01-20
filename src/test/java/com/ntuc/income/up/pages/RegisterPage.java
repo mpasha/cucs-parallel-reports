@@ -14,7 +14,7 @@ public class RegisterPage {
     public RegisterPage(WebDriver driver)
     {
         PageFactory.initElements(driver, this);
-        rs = new ReusableLibrary(driver);
+        this.rs = new ReusableLibrary(driver);
         this.driver = driver;
     }
     //NTUC Register
@@ -140,8 +140,11 @@ public class RegisterPage {
     public void selectIdentityType(String idType){
         rs.pageSync();
         rs.click(drpIdentityType);
+        rs.webpageState();
         switch (idType){
-            case "NRIC": rs.click(liIdTypeNric);
+            case "NRIC":
+                rs.WaitForElementToLoad(driver, liIdTypeNric);
+                rs.click(liIdTypeNric);
             break;
             case "FIN": rs.click(liIdTypeFin);
             break;
