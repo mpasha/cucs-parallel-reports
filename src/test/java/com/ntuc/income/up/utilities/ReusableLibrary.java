@@ -1,6 +1,5 @@
 package com.ntuc.income.up.utilities;
 
-import com.cucumber.listener.Reporter;
 import cucumber.api.Scenario;
 import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
@@ -23,8 +22,6 @@ import java.util.function.Function;
 
 import static java.lang.Boolean.FALSE;
 import static java.lang.String.format;
-import static java.util.concurrent.TimeUnit.MILLISECONDS;
-import static java.util.concurrent.TimeUnit.SECONDS;
 
 public class ReusableLibrary {
 
@@ -39,7 +36,7 @@ public class ReusableLibrary {
 
 	/**
 	 * @description: Click on an element
-	 * @author: Arunava
+	 * 
 	 */
 	public void click(WebElement wb) {
 		try {
@@ -50,12 +47,12 @@ public class ReusableLibrary {
 	}
 
 	/**
-	 * @description: Get Text
-	 * @author: Arunava
+	 * @description: Send Keys
+	 * 
 	 */
 	public void sendKeys(WebElement wb, String text) {
 		try {
-			wb.clear();
+			clear(wb);
 			wb.sendKeys(text);
 		} catch (Exception e) {
 			Assert.fail("Cannot enter text:: " + text);
@@ -63,8 +60,20 @@ public class ReusableLibrary {
 	}
 
 	/**
+	 * @description: Clear
+	 *
+	 */
+	public void clear(WebElement wb) {
+		try {
+			wb.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
+		} catch (Exception e) {
+			Assert.fail("Cannot clear the text:: ");
+		}
+	}
+
+	/**
 	 * @description: Mouse Hover
-	 * @author: Arunava
+	 * 
 	 */
 	public void HoverMouse(WebElement wb) {
 		try {
@@ -77,7 +86,7 @@ public class ReusableLibrary {
 
 	/**
 	 * @description: Explicit Wait
-	 * @author: Arunava
+	 * 
 	 */
 	public boolean isUIObjectReady(WebElement wb) {
 		boolean bReturn = false;
@@ -97,7 +106,7 @@ public class ReusableLibrary {
 
 	/**
 	 * @description: Check whether page is loaded
-	 * @author: Arunava
+	 * 
 	 */
 	public boolean pageSync() {
 		boolean bActionStatus = false;
@@ -137,7 +146,7 @@ public class ReusableLibrary {
 
 	/**
 	 * @description: Verify whether page contains HTTP error
-	 * @author: Arunava
+	 * 
 	 */
 	public boolean validateHttpPageError(String geturl) {
 		boolean toReturn = true;
@@ -172,7 +181,7 @@ public class ReusableLibrary {
 	}
 	/**
 	 * @description: Enter text character by character in textbox
-	 * @author: Arunava
+	 * 
 	 */
 	public void sendKeysByChar(WebElement wb, String text) {
 		try {
@@ -196,7 +205,7 @@ public class ReusableLibrary {
 
 	/**
 	 * @description: Capture Screenshot
-	 * @author: Arunava
+	 * 
 	 */
 	public void captureScreenshot(Scenario scenario) {
 		String screenshotName = scenario.getName().replaceAll(" ", "_");
@@ -214,19 +223,19 @@ public class ReusableLibrary {
 			FileUtils.copyFile(SrcFile, destinationPath);
 
 			// This attach the specified screenshot to the test
-			Reporter.addScreenCaptureFromPath(destinationPath.toString());
+//			Reporter.addScreenCaptureFromPath(destinationPath.toString());
 		} catch (IOException e) {
 		}
 	}
 
 	public void WaitForElementToLoad(WebDriver driver,String Xpath) {
-		WebDriverWait wait = new WebDriverWait(driver,25);
+		WebDriverWait wait = new WebDriverWait(driver,20);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(Xpath)));
 	}
 
 	public void WaitForElementToLoad(WebDriver driver, WebElement element) {
 		try {
-			WebDriverWait wait = new WebDriverWait(driver, 25);
+			WebDriverWait wait = new WebDriverWait(driver, 20);
 			wait.until(ExpectedConditions.visibilityOf(element));
 		}catch (Exception e) {
 			CommonUtils.LOGGER.error(format("Element %s is not loaded", element), e);
@@ -247,12 +256,12 @@ public class ReusableLibrary {
 	}
 
 	private Wait<WebDriver> fluentWait(long timeout) {
-		return new FluentWait<WebDriver>(_driver).withTimeout(Duration.ofSeconds(100))
+		return new FluentWait<WebDriver>(_driver).withTimeout(Duration.ofSeconds(20))
 				.pollingEvery(Duration.ofMillis(timeout)).ignoring(NoSuchElementException.class);
 	}
 
 	private int getTimeout() {
-		return Integer.parseInt("30");
+		return Integer.parseInt("20");
 	}
 
 	private Function<WebDriver, Boolean> expectedConditions(Boolean condition) {

@@ -9,21 +9,17 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-
-
     <properties>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.resourceEncoding>UTF-8</project.build.resourceEncoding>
         <maven.compile.encoding>UTF-8</maven.compile.encoding>
-
         <gherkin.version>5.1.0</gherkin.version>
         <cucumber-expressions.version>6.2.0</cucumber-expressions.version>
         <datatable.version>1.1.12</datatable.version>
         <tag-expressions.version>1.1.1</tag-expressions.version>
         <cucumber-html.version>0.2.7</cucumber-html.version>
         <io-version>4.2.0</io-version>
-
     </properties>
 
     <dependencies>
@@ -32,40 +28,6 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>
-
-        <!--&lt;!&ndash; https://mvnrepository.com/artifact/io.cucumber/cucumber-junit &ndash;&gt;
-        <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-junit</artifactId>
-            <version>1.2.5</version>
-            <scope>test</scope>
-        </dependency>
-
-
-        &lt;!&ndash; https://mvnrepository.com/artifact/io.cucumber/cucumber-java &ndash;&gt;
-        <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-java</artifactId>
-            <version>1.2.5</version>
-        </dependency>
-
-
-        &lt;!&ndash; https://mvnrepository.com/artifact/io.cucumber/cucumber-core &ndash;&gt;
-        <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-core</artifactId>
-            <version>1.2.5</version>
-        </dependency>
-
-        &lt;!&ndash; https://mvnrepository.com/artifact/info.cukes/cucumber-picocontainer &ndash;&gt;
-        <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-picocontainer</artifactId>
-            <version>1.2.4</version>
-        </dependency>-->
-        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm -->
-
-
 
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -106,33 +68,10 @@
             <artifactId>cucumber-picocontainer</artifactId>
             <version>${io-version}</version>
         </dependency>
-
-
-
-
-
-
-
-
-
-
-
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-server</artifactId>
             <version>3.14.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.vimalselvam</groupId>
-            <artifactId>cucumber-extentsreport</artifactId>
-            <version>3.0.2</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports</artifactId>
-            <version>3.1.2</version>
         </dependency>
 
         <dependency>
@@ -182,7 +121,6 @@
             <artifactId>poi</artifactId>
             <version>3.16</version>
         </dependency>
-
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
@@ -193,7 +131,6 @@
             <artifactId>selenium-htmlunit-driver</artifactId>
             <version>2.52.0</version>
         </dependency>
-
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>phantomjsdriver</artifactId>
@@ -212,7 +149,7 @@
         <dependency>
             <groupId>net.masterthought</groupId>
             <artifactId>cucumber-reporting</artifactId>
-            <version>4.3.0</version>
+            <version>4.4.0</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -224,13 +161,6 @@
             <artifactId>commons-io</artifactId>
             <version>2.6</version>
         </dependency>
-
-        <dependency>
-            <groupId>com.rajatthareja</groupId>
-            <artifactId>reportbuilder</artifactId>
-            <version>1.0.3</version>
-        </dependency>
-
     </dependencies>
 
     <build>
@@ -253,51 +183,108 @@
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
+
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.14</version>
-                <configuration>
-                    <skip>false</skip>
-                </configuration>
+                <groupId>com.github.temyers</groupId>
+                <artifactId>cucumber-jvm-parallel-plugin</artifactId>
+                <version>5.0.0</version>
                 <executions>
                     <execution>
-                        <id>RunTests</id>
-                        <phase>integration-test</phase>
+                        <id>sanity</id>
+                        <phase>generate-test-sources</phase>
                         <goals>
-                            <goal>test</goal>
+                            <goal>generateRunners</goal>
                         </goals>
                         <configuration>
-                            <includes>
-                                <include>**/RunTest.class</include>
-                            </includes>
-                            <testFailureIgnore>true</testFailureIgnore>
+                            <glue>
+                                <package>com.ntuc.income.up.steps</package>
+                            </glue>
+                            <outputDirectory>${project.build.directory}/generated-test-sources/cucumber
+                            </outputDirectory>
+                            <featuresDirectory>src/test/resources/features/</featuresDirectory>
+                            <cucumberOutputDir>target/cucumber-parallel</cucumberOutputDir>
+                            <format>json</format>
+                            <strict>true</strict>
+                            <monochrome>true</monochrome>
+                            <tags>
+                                <tag>@sanity</tag>
+                            </tags>
+                            <useTestNG>false</useTestNG>
+                            <namingScheme>pattern</namingScheme>
+                            <namingPattern>Sanity{c}IT</namingPattern>
+                            <parallelScheme>SCENARIO</parallelScheme>
+                            <!--<customVmTemplate>src/test/resources/cucumber-custom-runner.vm</customVmTemplate>-->
+                            <packageName>com.ntuc.income</packageName>
                         </configuration>
                     </execution>
                     <execution>
-                        <id>ParallelTests</id>
-                        <phase>integration-test</phase>
+                        <id>regression</id>
+                        <phase>generate-test-sources</phase>
                         <goals>
-                            <goal>test</goal>
+                            <goal>generateRunners</goal>
                         </goals>
                         <configuration>
-                            <skip>false</skip>
-                            <forkCount>2</forkCount>
-                            <reuseForks>false</reuseForks>
-                            <argLine>-Duser.language=en</argLine>
-                            <argLine>-Xmx1024m</argLine>
-                            <argLine>-XX:MaxPermSize=256m</argLine>
-                            <argLine>-Dfile.encoding=UTF-8</argLine>
-                            <useFile>false</useFile>
-                            <includes>
-                                <include>**/RunTest.class</include>
-                                <include>**/RunCukeParallelTest.class</include>
-                            </includes>
-                            <testFailureIgnore>true</testFailureIgnore>
+                            <glue>
+                                <package>com.ntuc.income.up.steps</package>
+                            </glue>
+                            <outputDirectory>${project.build.directory}/generated-test-sources/cucumber</outputDirectory>
+                            <featuresDirectory>src/test/resources/features/</featuresDirectory>
+                            <cucumberOutputDir>target/cucumber-parallel</cucumberOutputDir>
+                            <format>json</format>
+                            <strict>true</strict>
+                            <monochrome>true</monochrome>
+                            <tags>
+                                <tag>@regression</tag>
+                            </tags>
+                            <useTestNG>false</useTestNG>
+                            <namingScheme>pattern</namingScheme>
+                            <namingPattern>Regression{c}IT</namingPattern>
+                            <parallelScheme>SCENARIO</parallelScheme>
+                            <!--<customVmTemplate>src/test/resources/cucumber-custom-runner.vm</customVmTemplate>-->
+                            <packageName>com.ntuc.income</packageName>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.1</version>
+                <executions>
+                    <execution>
+                        <id>SanityTests</id>
+                        <phase>integration-test</phase>
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                        <configuration>
+                            <forkCount>2</forkCount>
+                            <reuseForks>true</reuseForks>
+                            <includes>
+                                <include>**/Sanity*IT.class</include>
+                            </includes>
+                            <testFailureIgnore>true</testFailureIgnore>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>RegressionTests</id>
+                        <phase>integration-test</phase>
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                        <configuration>
+                            <forkCount>2</forkCount>
+                            <reuseForks>true</reuseForks>
+                            <includes>
+                                <include>**/Regression*IT.class</include>
+                            </includes>
+                        </configuration>
+                    </execution>
+                </executions>
+
+            </plugin>
+
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
@@ -310,11 +297,12 @@
                     <execution>
                         <id>Generate Report</id>
                         <phase>post-integration-test</phase>
-                        <goals><goal>java</goal></goals>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
                     </execution>
                 </executions>
             </plugin>
-
         </plugins>
     </build>
 </project>
