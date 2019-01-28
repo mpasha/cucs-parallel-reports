@@ -8,6 +8,9 @@ import cucumber.api.java.Before;
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 import io.github.bonigarcia.wdm.FirefoxDriverManager;
 import io.github.bonigarcia.wdm.InternetExplorerDriverManager;
+import org.openqa.selenium.MutableCapabilities;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -15,7 +18,11 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
+import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class Hook extends BaseUtil {
@@ -28,15 +35,16 @@ public class Hook extends BaseUtil {
 
     /**
      * @description: To be executed before every scenario block
-     * @author: Arunava
+     *
      */
     @Before
     public void setup() {
         System.out.println("Start Browser");
         String appUrl = "http://localhost:3000/register/";
         String env = "LOCAL";
-        String remoteUrl = "";
-        String browser = "Chrome";//System.getProperty("Browser");
+//        String remoteUrl = "https://selenium-hub-dev-up.awsocp.sit.income.org.sg";
+        String remoteUrl = "http://localhost:4444/wd/hub";
+        String browser = System.getProperty("Browser");
 
         if (env.equalsIgnoreCase("LOCAL"))
             setUpLocal(browser, appUrl);
@@ -62,6 +70,7 @@ public class Hook extends BaseUtil {
         } else if ("CHROME".equalsIgnoreCase(browser)) {
             ChromeDriverManager.getInstance().setup();
             ChromeOptions options = new ChromeOptions();
+
             if ("Y".equalsIgnoreCase(System.getenv("HEADLESS"))) {
                 options.addArguments("--headless");
                 options.addArguments("--disable-gpu");
@@ -76,31 +85,59 @@ public class Hook extends BaseUtil {
         switch (browser) {
             case "IE":
                 InternetExplorerDriverManager.getInstance().setup();
-//                driver = new InternetExplorerDriver();
+                InternetExplorerOptions internetExplorerOptions = new InternetExplorerOptions();
+                internetExplorerOptions.ignoreZoomSettings();
+                internetExplorerOptions.introduceFlakinessByIgnoringSecurityDomains();
+                internetExplorerOptions.requireWindowFocus();
+                try {
+                    base.Driver = new RemoteWebDriver(new URL(remoteUrl), internetExplorerOptions);
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
                 break;
             case "FIREFOX":
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
-                if ("Y".equalsIgnoreCase(System.getenv("HEADLESS"))) {
+//                if ("Y".equalsIgnoreCase(System.getenv("HEADLESS"))) {
                     firefoxOptions.addArguments("--headless");
                     firefoxOptions.addArguments("--disable-gpu");
-                }
+//                }
                 DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
                 desiredCapabilities.setCapability(FirefoxOptions.FIREFOX_OPTIONS, firefoxOptions);
-//                    driver = new RemoteWebDriver(new URL(URL), desiredCapabilities);
+                try {
+                    base.Driver = new RemoteWebDriver(new URL(remoteUrl), desiredCapabilities);
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
                 break;
             case "CHROME":
             default:
                 ChromeOptions options = new ChromeOptions();
-                if ("Y".equalsIgnoreCase(System.getenv("HEADLESS"))) {
+//                if ("Y".equalsIgnoreCase(System.getenv("HEADLESS"))) {
                     options.addArguments("--headless");
                     options.addArguments("--disable-gpu");
+//                }
+                    desiredCapabilities = DesiredCapabilities.chrome();
+                    desiredCapabilities.setVersion(System.getenv("BROWSER_VERSION"));
+                try {
+                    base.Driver = new RemoteWebDriver(new URL(remoteUrl), desiredCapabilities);
                 }
-//                    desiredCapabilities = DesiredCapabilities.chrome();
-//                    desiredCapabilities.setVersion(System.getenv("BROWSER_VERSION"));
-//                    driver = new RemoteWebDriver(new URL(URL), options);
+                catch (Exception e){
+                    e.printStackTrace();
+                }
                 break;
         }
-//        initialiseDriver(appUrl);
+        initialiseDriver(appUrl);
+    }
+
+    public void setRemoteWebDriver(String remoteUrl, MutableCapabilities desiredCapabilities){
+        try {
+            base.Driver = new RemoteWebDriver(new URL(remoteUrl), desiredCapabilities);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     public void initialiseDriver(String url) {
@@ -115,7 +152,7 @@ public class Hook extends BaseUtil {
 
     /**
      * @description: To be executed after every scenario block
-     * @author: Arunava
+     *
      */
     @After(order = 0)
     public void tearDown() {
@@ -125,8 +162,9 @@ public class Hook extends BaseUtil {
     @After(order = 1)
     public void afterScenario(Scenario scenario) {
         if (scenario.isFailed()) {
-            ReusableLibrary rs = new ReusableLibrary(base.Driver);
-            rs.captureScreenshot(scenario);
+            TakesScreenshot scrShot = ((TakesScreenshot) base.Driver);
+            final byte[] screenshot = scrShot.getScreenshotAs(OutputType.BYTES);
+            scenario.embed(screenshot,"image/png");
         }
     }
 }

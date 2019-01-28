@@ -7,17 +7,23 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.stream.IntStream;
+
+import static com.ntuc.income.up.pages.CommonPage.*;
+
 public class RegisterPage {
 
-    ReusableLibrary rs;
-    WebDriver driver;
+    private ReusableLibrary rs;
+    private WebDriver driver;
     public RegisterPage(WebDriver driver)
     {
         PageFactory.initElements(driver, this);
         this.rs = new ReusableLibrary(driver);
         this.driver = driver;
     }
-    //NTUC Register
+
+    /********************Registration Form**********************/
+
     @FindBy(how= How.XPATH, using="//div[@id='identityType']")
     public static WebElement drpIdentityType;
 
@@ -51,46 +57,7 @@ public class RegisterPage {
     @FindBy(how= How.XPATH, using="//button[@type='submit']")
     public static WebElement btnRegisterSubmit;
 
-
-    //Otp POP-UP
-    @FindBy(how= How.XPATH, using="//input[@data-test-id='otp/0']")
-    public static WebElement txtOtp0;
-
-    @FindBy(how= How.XPATH, using="//input[@data-test-id='otp/1']")
-    public static WebElement txtOtp1;
-
-    @FindBy(how= How.XPATH, using="//input[@data-test-id='otp/2']")
-    public static WebElement txtOtp2;
-
-    @FindBy(how= How.XPATH, using="//input[@data-test-id='otp/3']")
-    public static WebElement txtOtp3;
-
-    @FindBy(how= How.XPATH, using="//input[@data-test-id='otp/4']")
-    public static WebElement txtOtp4;
-
-    @FindBy(how= How.XPATH, using="//input[@data-test-id='otp/5']")
-    public static WebElement txtOtp5;
-
-    @FindBy(how= How.XPATH, using="//div[@data-test-id='otpModal/resend']")
-    public static WebElement lnkResendOtp;
-
-    @FindBy(how= How.XPATH, using="//button[@data-test-id='otpModal/login']")
-    public static WebElement btnLogin;
-
-    @FindBy(how= How.XPATH, using="//div[@data-test-id='otpModal/wrongNo']")
-    public static WebElement lnkWrongNumber;
-
-    @FindBy(how= How.XPATH, using="//div[contains(text(), '+95 6788 1122')]")
-    public static WebElement lnkMobileNumberPopup;
-
-    @FindBy(how= How.XPATH, using="//div[contains(text(), 'csquey@income.com.sg')]")
-    public static WebElement lnkContactEmailPopup;
-
-
-    @FindBy(how= How.XPATH, using="//div[contains(text(), 'Activate With your OTP')]")
-    public static WebElement lblOtpPopUp;
-
-    //Register with Email Address Page
+    /********************Email Verify Registration Form**********************/
 
     @FindBy(how= How.XPATH, using="//input[@data-test-id='register/verify/email']")
     public static WebElement txtRegisterEmail;
@@ -104,11 +71,12 @@ public class RegisterPage {
     @FindBy(how= How.XPATH, using="//input[@data-test-id='register/verify/emailChange']")
     public static WebElement chkRegisterEmailChange;
 
-    //Error Messages
+    /********************Registration Form Error Messages**********************/
+
     @FindBy(how= How.XPATH, using="//div[contains(text(), 'Please enter a valid NRIC/FIN.')]")
     public static WebElement lblValidNricOrFinError;
 
-    @FindBy(how= How.XPATH, using="//div[contains(text(), 'Please enter a valid passport.')]")
+    @FindBy(how= How.XPATH, using="//div[contains(text(), 'Please provide your Passport No. for verification.')]")
     public static WebElement lblValidPassportError;
 
     @FindBy(how= How.XPATH, using="//div[contains(text(), 'Please enter a valid DOB.')]")
@@ -124,26 +92,30 @@ public class RegisterPage {
     public static WebElement lblPasswordCriteria;
 
     @FindBy(how= How.XPATH, using="//div[contains(text(), '* This is a required field.')]")
-    public static WebElement lblTermsAndCondRequired;
+    public static WebElement lblTermsAndCondRequiredError;
 
-    //Success Flow
+    @FindBy(how= How.XPATH, using="//input[@data-test-id='register/global/error']")
+    public static WebElement lblGlobalError;
+
+    /********************Email Verification Success**********************/
+
     @FindBy(how= How.XPATH, using="//div[contains(text(), 'Verify your email address')]")
     public static WebElement lblVerifyEmailAdressPopUp;
 
     @FindBy(how= How.XPATH, using="//input[@data-test-id='emailModal/button']")
     public static WebElement btnVerifyEmailPopupOk;
 
-    //****************************************//
-    //***************Functions****************//
-    //****************************************//
+    /****************************************/
+    /*             Functions                */
+    /****************************************/
 
     public void selectIdentityType(String idType){
         rs.pageSync();
         rs.click(drpIdentityType);
         rs.webpageState();
+        rs.WaitForElementToLoad(driver, liIdTypeNric);
         switch (idType){
             case "NRIC":
-                rs.WaitForElementToLoad(driver, liIdTypeNric);
                 rs.click(liIdTypeNric);
             break;
             case "FIN": rs.click(liIdTypeFin);
@@ -164,7 +136,7 @@ public class RegisterPage {
         rs.click(chkTermsAndConditions);
     }
 
-    public void registerNext(){
+    public void submitNext(){
         rs.click(btnRegisterSubmit);
     }
 
@@ -173,32 +145,13 @@ public class RegisterPage {
         enterIdType(idTypeText);
         enterDateOfBirth(dob);
         clickTermsAndConds();
-        registerNext();
-    }
-
-    public void enterOtp(){
-        rs.sendKeys(txtOtp0, "1");
-        rs.sendKeys(txtOtp1, "1");
-        rs.sendKeys(txtOtp2, "1");
-        rs.sendKeys(txtOtp3, "1");
-        rs.sendKeys(txtOtp4, "1");
-        rs.sendKeys(txtOtp5, "1");
-    }
-
-    public void clickLogin(){
-        rs.click(btnLogin);
-    }
-
-    public void clickNotThisNumber(){
-        rs.click(lnkWrongNumber);
-    }
-
-    public void clickResendOtpPin(){
-        rs.click(lnkResendOtp);
+        submitNext();
     }
 
     public void fillEmailVerifyForm(String password, String confirmPassword){
+        clearElement(txtRegisterPassword);
         rs.sendKeys(txtRegisterPassword, password);
+        clearElement(txtRegisterConfirmPassword);
         rs.sendKeys(txtRegisterConfirmPassword, confirmPassword);
     }
 
@@ -210,61 +163,19 @@ public class RegisterPage {
     }
 
     public boolean verifyEmailPopUpDisplayed(){
-//        rs.webpageState();
         rs.WaitForElementToLoad(driver, lblVerifyEmailAdressPopUp);
         return rs.isElemVisible(lblVerifyEmailAdressPopUp);
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //*******************Sample Facebook App ************************/
-    @FindBy(how= How.XPATH, using="//input[@id='email']")
-    public static WebElement txtUserName;
-
-    @FindBy(how= How.XPATH, using="//input[@id='pass']")
-    public static WebElement txtPassword;
-
-    @FindBy(how= How.XPATH, using="//input[@value='Log In']")
-    public static WebElement btnSubmit;
-
-    @FindBy(how= How.XPATH, using="//input[@name='firstname']")
-    public static WebElement txtFirstName;
-
-    @FindBy(how= How.XPATH, using="//input[@name='lastname']")
-    public static WebElement txtLastName;
-
-    @FindBy(how= How.XPATH, using="//input[@name='reg_email__']")
-    public static WebElement txtMobileOrEmail;
-
-    @FindBy(how= How.XPATH, using="//input[@name='reg_passwd__']")
-    public static WebElement txtSignupPassword;
-
-    public void enterSignUpInfo(String firstName,String lastName,String emailOrMobile,String signUpPassword){
-        rs.sendKeys(txtFirstName,firstName);
-        rs.sendKeys(txtLastName,lastName);
-        rs.sendKeys(txtMobileOrEmail,emailOrMobile);
-        rs.sendKeys(txtSignupPassword,signUpPassword);
+    public void clearElement(WebElement wb){
+        rs.clear(wb);
     }
 
-    public void clearSignUpInfo(){
-        txtFirstName.clear();
-        txtLastName.clear();
-        txtMobileOrEmail.clear();
-        txtSignupPassword.clear();
-    }
 
-    public void waitForFacebookPage(WebDriver driver){
-        rs.WaitForElementToLoad(driver,"//input[@name='firstname']");
-    }
+
+
+
+
+
+
 }
