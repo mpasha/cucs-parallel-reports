@@ -1,6 +1,6 @@
 Feature: Login to UP
 
-  @PU-3
+  @PU-3 @regression
   Scenario Outline: Login to UP through a registered email
     Given user launches the unified portal with login data "<Feature>" and "<Scenario>"
     When user fills up the login form and clicks on next
@@ -28,7 +28,7 @@ Feature: Login to UP
       | Feature | Scenario      |
       | Login   | LoginToUP_TC1 |
 
-  @PU-3
+  @PU-3 @regression
   Scenario Outline: User doesn't login with invalid credentials like <Scenario>
     Given user launches the unified portal with "<Feature>" and "<Scenario>"
     When user fills up the login form and clicks on next
